@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Portfolio</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Prashanth</h1>
+      <div class="navLinks">
+        <nav>
+          <ul>
+            <a class="nav navsummary" href="#summary"><li>Summary</li></a>
+            <a class="nav navabout" href="#about"><li>About</li></a>
+            <a class="nav navproject" href="#projects"><li>Projects</li></a>
+            <a class="nav navcontact" href="#contact"><li>Contact</li></a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <section class="summary" id="summary">
+        <div class="left">
+          <h3>Hey There</h3>
+          <h1>I'm Prashanth</h1>
+          <h3>Full Stack Developer</h3>
+
+          <p>
+            I am a passionate software engineer with hands-on experience in
+            building full-stack web applications using the MERN stack (MongoDB,
+            Express.js, React.js, Node.js). I also have a strong foundation in
+            Data Structures & Algorithms, and have completed multiple projects
+            in Machine Learning and AI. I specialize in developing scalable
+            systems and clean, intuitive user interfaces. My core strength lies
+            in solving real-world problems through technology — from deploying
+            full-stack apps to building predictive ML models. I'm continuously
+            learning and aiming to contribute to high-impact engineering teams.
+          </p>
+
+          <div class="bnts">
+            <a class="bnt" href="./public/MyResume.pdf" download="Myresume"
+              >View Resume</a
+            >
+            <a class="bnt" href="#contact">Cotact info</a>
+          </div>
+        </div>
+        <div class="right">
+          <div class="background"></div>
+          <img src="./public/myAiPic.png" alt="Prashanth" />
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="up">
+          <h1>About Me</h1>
+        </div>
+        <div class="down">
+          <h1>Experiance</h1>
+          <div class="exp">
+            <div class="exp1">
+              <h1>Full Stack Developer Intern</h1>
+              <p>
+                ◦ Built a Modular Learning Platform with role-based access using
+                Node.js, Express, MongoDB, and Next.js,TailwindCss.
+                <br />
+                ◦ Implemented admin and learner dashboards with nested course
+                structure (Courses → Sections → Units → Chapters). <br />◦
+                Integrated JWT authentication, protected routes, and dynamic
+                rendering based on user roles. <br />
+                ◦ Enabled chapter-wise interactive questions (MCQ,
+                fill-in-the-blank, text/audio) and progress tracking using a
+                custom UserProgress model. <br />
+                ◦ Used Redux/React Context for state management and Mongoose
+                populate for efficient nested data handling.
+              </p>
+            </div>
+            <div class="exp2">
+              <h1>Software Development Engineer Intern</h1>
+              <p>
+                ◦ IPO Web Application Frontend: Designed and developed the
+                frontend for a web application featuring upcoming IPO companies,
+                using React.js and CSS to create a responsive and user-friendly
+                interface. <br />
+                ◦ Admin Dashboard for IPO Management: Implemented an admin
+                dashboard that allowed administrators to easily add, update, or
+                delete IPO listings, enhancing content management and platform
+                control. <br />
+                ◦ API Integration User Experience Optimization: Developed an
+                intuitive user interface and ensured smooth data flow between
+                the frontend and backend.
+              </p>
+            </div>
+          </div>
+          <h1>Education</h1>
+          <div class="edu">
+            <h1>Software Development Engineer Intern</h1>
+            <p>
+              ◦ IPO Web Application Frontend: Designed and developed the
+              frontend for a web application featuring upcoming IPO companies,
+              using React.js and CSS to create a responsive and user-friendly
+              interface. <br />
+              ◦ Admin Dashboard for IPO Management: Implemented an admin
+              dashboard that allowed administrators to easily add, update, or
+              delete IPO listings, enhancing content management and platform
+              control. <br />
+              ◦ API Integration User Experience Optimization: Developed an
+              intuitive user interface and ensured smooth data flow between the
+              frontend and backend.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="up">
+          <h1>Projects</h1>
+        </div>
+        <div class="prolist">
+          <div class="pro pro1">
+            <img
+              src="https://cdn0.scrvt.com/b095ee27d37b3d7b6b150adba9ac6ec8/d59373be811616d9/e9e63095f3b4/v/7ff372c2b210/Devconnect-2023.jpg?nowebp=1"
+              alt=""
+            />
+            <h3>Dev-Sea - Developer Q&A Platform</h3>
+            <p>
+              • Built a full-stack Q&A platform for developers using React.js,
+              Node.js, Express.js, and MongoDB.
+              <br />• Implemented Firebase Authentication with email and Google
+              login, GitHub login, Facebook login. <br />• Integrated a rich
+              text editor supporting code blocks, tables, and mentions for
+              advanced content formatting
+            </p>
+
+            <div class="bnts">
+              <a>GitHub</a>
+              <a>Live Demo</a>
+            </div>
+          </div>
+          <div class="pro pro2">
+            <img
+              src="https://porfolio-umber-delta.vercel.app/projects/MoodSync.png"
+              alt=""
+            />
+            <h3>MOODsync-Mood-Based Music Engine</h3>
+            <p>
+              • Developed a real-time mood-based music recommendation platform
+              targeting cab users and flight passengers. <br />
+              • Integrated Face-API.js and text sentiment analysis to detect
+              emotions and generate personalized playlist suggestions. <br />
+              • Fetched music from Deezer and YouTube APIs based on mood (happy,
+              sad, angry, etc.).
+            </p>
+
+            <div class="bnts">
+              <a>GitHub</a>
+              <a>Live Demo</a>
+            </div>
+          </div>
+          <div class="pro pro3">
+            <img
+              src="https://porfolio-umber-delta.vercel.app/projects/ML-multiDiseasePredictionSystem.png"
+              alt=""
+            />
+            <h3>ML-multiDiseasePredictionSystem</h3>
+            <p>
+              ◦ Developed a machine learning-based health risk prediction system
+              for Diabetes, Heart Disease, and Parkinson’s Disease.
+              <br />◦ Built an interactive Streamlit-based web application for
+              real-time disease risk assessment,Implemented data preprocessing,
+              feature selection, and ML model evaluation for accurate
+              predictions. <br />
+              ◦ Used Logistic Regression SVM classifiers to analyze medical
+              datasets,Deployed the application on Streamlit Cloud for easy
+              accessibility.
+            </p>
+
+            <div class="bnts">
+              <a>GitHub</a>
+              <a>Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>
+          Feel free to reach out for collaborations or just a friendly hello!
+        </p>
+
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
