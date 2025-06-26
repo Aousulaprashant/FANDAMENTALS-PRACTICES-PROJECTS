@@ -2,18 +2,23 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     transition: all 0.4s ease;
 }
-
+body{
+    transition: all 0.3s ease;
+}
 html{
     scroll-behavior: smooth;
 }
 .header{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     align-items: center;
     position: sticky;
     top: 0px;
+    box-shadow: 10px 10px 8px #888888;;
+    z-index: 999;
 }
 .header h1{
     color: #C83F12;
@@ -34,9 +39,31 @@ ul a{
     text-decoration: none;
     text-decoration-style: none;
     transition: all 0.3s ease;
+    font-weight: 900;
 }
 ul a:hover{
     color:#f3511b
+}
+
+ul{
+    padding-right: 30px;
+}
+ul .navbnt{
+  background-color: black;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+ul .navbnt:hover{
+    font-size: 28px;
 }
 .container .summary{
     display: flex;
@@ -51,7 +78,7 @@ display: flex;
     width: 300px;
     height: 420px;
     border-radius: 30%;
-
+    z-index: 2;
 }
 .summary .right .background{
     background-color: #C83F12;
@@ -60,12 +87,22 @@ display: flex;
     border-radius: 50%;
     position: absolute;
     right: 40px;
-    z-index: -1;
+    z-index: 1;
 }
 .summary .left h1{
     font-size: 4rem;
+    color: #C83F12;
 }
- 
+.summary .left .skills{
+    color: #3d4ac3be;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    font-size: 1.4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.left p{
+    padding-right: 10%;
+}
 .left .bnts{
     display: flex;
     max-width: fit-content;
@@ -97,6 +134,10 @@ display: flex;
 .about .down{
     padding: 30px;
 }
+.about .down .main{
+    color: #C83F12;
+    padding:20px 0px;
+}
 .about .down .exp{
     padding-left: 40px;
 }
@@ -125,6 +166,7 @@ display: flex;
 .pro{
     width:450px ;
     height:400px;
+    transition: all 0.3s ;
     background-color: #fa916e;
     border-radius: 40px;
    overflow: hidden;
@@ -132,6 +174,9 @@ display: flex;
 .pro img{
     width: 100%;
 
+}
+.pro:hover{
+    transform: scale(1.03);
 }
 .pro h3{
     font-size: 1.2rem;
@@ -206,4 +251,68 @@ display: flex;
     .navLinks{
         display: none;
     }
+}
+
+
+
+/*
+    DARK MODE
+*/
+
+body.darkMode .header{
+    background-color: #000000; 
+    box-shadow: 10px 10px 8px #201f1fdc;;
+}
+
+body.darkMode .container{
+    background-color: #000000;
+    color: #f7f7f7;
+}
+body.darkMode .contact{
+    background-color: #000000;
+}
+
+body.darkMode .bnts .view{
+    color: white;
+    border: solid white 1px;
+}
+body.darkMode .bnts .contactbnt{
+    color: #000000;
+    background-color: white;
+}
+body.darkMode .navbnt{
+    background-color: #C83F12;
+}
+
+.down p{
+    padding: 20px;
+}
+
+footer{
+    background-color: #564741;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+body.darkMode footer{
+     background-color: #be988a;
+    color: #f3511b;
+}
+.typewriter-container {
+  font-size: 2rem;
+   color: #3d4ac3be;
+}
+
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
 }
